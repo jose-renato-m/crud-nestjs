@@ -13,8 +13,8 @@ This project aims to be a study of a **CRUD** using a [Node.js](https://nodejs.o
 This project is being developed in the following technologies:
 
 - [NestJS](https://nestjs.com/)
-- [MySQL](https://www.mysql.com/)
 - [TypeORM](https://typeorm.io/#/)
+- [MySQL](https://www.mysql.com/)
 
 ---
 
@@ -24,6 +24,9 @@ This project is being developed in the following technologies:
 
 # Clone the repository
 $ git clone https://github.com/jose-renato-m/crud-nestjs.git
+
+# Enter into the directory
+$ cd crud-nestjs
 
 # Install dependencies
 $ yarn
