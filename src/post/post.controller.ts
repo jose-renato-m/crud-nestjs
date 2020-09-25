@@ -1,5 +1,5 @@
 import { Body, Controller, Delete, Get, Param, ParseIntPipe, Post, Put } from '@nestjs/common';
-import { CreatePostDto } from './dtos';
+import { CreatePostDto, EditPostDto } from './dtos';
 
 @Controller('post')
 export class PostController {
@@ -25,7 +25,12 @@ export class PostController {
   }
 
   @Put(':id')
-  editOne(@Param('id') id: string) {}
+  editOne(
+    @Param('id') id: string,
+    @Body() dto: EditPostDto
+    ) {
+      return dto;
+    }
 
   @Delete(':id')
   deleteOne(@Param('id') id: string) {}
