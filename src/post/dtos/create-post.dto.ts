@@ -1,5 +1,5 @@
 import { PostCategory } from '../enums';
-import { IsArray, IsBoolean, IsString } from 'class-validator';
+import { IsArray, IsBoolean, IsEnum, IsString } from 'class-validator';
 
 export class CreatePostDto {
 
@@ -15,7 +15,7 @@ export class CreatePostDto {
   @IsString()
   content: string;
 
-  @IsString()
+  @IsEnum(PostCategory)
   category: PostCategory;
 
   @IsArray()
