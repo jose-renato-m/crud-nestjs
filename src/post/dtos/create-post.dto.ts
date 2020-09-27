@@ -1,5 +1,6 @@
 import { PostCategory } from '../enums';
 import { IsArray, IsBoolean, IsEnum, IsString } from 'class-validator';
+import { EnumToString } from 'src/helpers/enumToString'
 
 export class CreatePostDto {
 
@@ -15,7 +16,9 @@ export class CreatePostDto {
   @IsString()
   content: string;
 
-  @IsEnum(PostCategory)
+  @IsEnum(PostCategory, {
+    message: `Opção inválida. As opções corretas são ${ EnumToString(PostCategory) }`
+  })
   category: PostCategory;
 
   @IsArray()
