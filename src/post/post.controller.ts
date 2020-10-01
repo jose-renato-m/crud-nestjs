@@ -8,8 +8,12 @@ export class PostController {
   constructor(private readonly postService: PostService) {}
 
   @Get()
-  getMany() {
-    return this.postService.getMany();
+  async getMany() {
+    const data = await this.postService.getMany();
+    return {
+      message: 'Pedido correto',
+      data
+    }
   }
 
   @Get(':id')
