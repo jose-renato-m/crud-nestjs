@@ -31,6 +31,9 @@ $ cd crud-nestjs
 # Install dependencies
 $ yarn
 
+# Put docker compose up
+$ sudo docker-compose up
+
 # Start the server
 $ yarn start:dev
 ```
