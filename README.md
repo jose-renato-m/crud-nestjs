@@ -13,8 +13,10 @@ This project aims to be a study of a **CRUD** using a [Node.js](https://nodejs.o
 This project is being developed in the following technologies:
 
 - [NestJS](https://nestjs.com/)
-- [TypeORM](https://typeorm.io/#/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [MySQL](https://www.mysql.com/)
+- [TypeORM](https://typeorm.io/#/)
+- [docker compose](https://docs.docker.com/compose/)
 
 ---
 
